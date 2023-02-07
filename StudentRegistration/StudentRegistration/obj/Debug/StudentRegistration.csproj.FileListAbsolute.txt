@@ -58,7 +58,4 @@ C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Studen
 C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.dll
 C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.pdb
 C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\bin\CollegeServiceLibrary.dll
-C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\bin\project1_homepage.dll
-C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\bin\project1_homepage.pdb
-C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\bin\project1_homepage.dll.config
 C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\bin\CollegeServiceLibrary.pdb

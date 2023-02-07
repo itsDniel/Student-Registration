@@ -91,10 +91,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Desktop\3342\lab 1\project 1\project1\project1_homepage\project1_homepage.csproj">
-      <Project>{c8e860ce-d694-4dc1-acff-7fdd348115f2}</Project>
-      <Name>project1_homepage</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CollegeServiceLibrary\CollegeServiceLibrary.csproj">
       <Project>{98497add-1fa2-4c40-beed-1910d54a7455}</Project>
       <Name>CollegeServiceLibrary</Name>
