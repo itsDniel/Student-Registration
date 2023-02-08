@@ -8,12 +8,12 @@ namespace CollegeServiceLibrary
 {
     public class Student
     {
-        private string name { get; set; }
-        private string id { get; set; }
-        private string email { get; set; }
-        private string address { get; set; }
-        private string status {get; set;}
-        private string payment { get; set; }
+        public string name { get; set; }
+        public string id { get; set; }
+        public string email { get; set; }
+        public string address { get; set; }
+        public string status {get; set;}
+        public string payment { get; set; }
 
 
         public Student(string name, string id, string email, string address, string status, string payment)

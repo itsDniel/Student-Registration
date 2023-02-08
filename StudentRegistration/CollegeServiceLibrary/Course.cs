@@ -8,17 +8,19 @@ namespace CollegeServiceLibrary
 {
     public class Course
     {
-        private string crn { get; set; }
-        private string depCode { get; set; }
-        private string title { get; set; }
-        private string days { get; set; }
-        private string time { get; set; }
-        private string professor { get; set; }
-        private string credit { get; set; }
-        private string delivery { get; set; }
-        private string fees { get; set; }
-        private string seat { get; set; }
-        private Double cost { get; set; }
+        public string Delivery { get; set; }
+        public string CRN { get; set; }
+        public string DepartmentCode { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string Days { get; set; }
+        public string Time { get; set; }
+        public string Semester { get; set; }
+        public string Professor { get; set; }
+        public string Credit { get; set; }
+        public string Fees { get; set; }
+        public string Seat { get; set; }
+        public Double Cost { get; set; }
 
         public static double costCalc (Double a, Double b)
         {
@@ -26,19 +28,21 @@ namespace CollegeServiceLibrary
             return total;
         }
         
-        public Course(string crn, string depCode, string title, string days, string time, string professor, string credit, string delivery, string fees, string seat)
+        public Course(string delivery, string crn, string depCode, string title, string description, string days, string time, string semester, string professor, string credit, string fees, string seat, double cost)
         {
-            this.crn = crn;
-            this.depCode = depCode;
-            this.title = title;
-            this.days = days;
-            this.time = time;
-            this.professor = professor;
-            this.credit = credit;
-            this.delivery = delivery;
-            this.fees = fees;
-            this.seat = seat;
-            this.cost = costCalc(double.Parse(credit), double.Parse(fees));
+            this.CRN = crn;
+            this.DepartmentCode = depCode;
+            this.Title = title;
+            this.Description = description;
+            this.Days = days;
+            this.Time = time;
+            this.Semester = semester;
+            this.Professor = professor;
+            this.Credit = credit;
+            this.Delivery = delivery;
+            this.Fees = fees;
+            this.Seat = seat;
+            this.Cost = cost;
         }
     }
 }

@@ -9,7 +9,7 @@ namespace CollegeServiceLibrary
     public class StudentRoster
     {
         List<Course> b = new List<Course>();
-        public List<Course> test(Course a)
+        public List<Course> addCourse(Course a)
         {
             //List<Course> b = new List<Course>;
             b.Add(a);
