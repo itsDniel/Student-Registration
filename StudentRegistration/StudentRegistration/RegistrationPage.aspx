@@ -14,6 +14,7 @@
 <body>
     <form id="registrationForm" runat="server">
         <div>
+            <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" style="z-index: 1; left: 40px; top: 583px; position: absolute" Text="Submit Registration" />
             <asp:Label ID="namelbl" runat="server" style="z-index: 1; left: 48px; top: 24px; position: absolute" Text="Please enter your name:"></asp:Label>
             <asp:Label ID="idlbl" runat="server" style="z-index: 1; left: 47px; top: 78px; position: absolute" Text="Please enter your student ID:"></asp:Label>
             <asp:TextBox ID="nametxt" runat="server" OnTextChanged="nametxt_TextChanged" style="z-index: 1; left: 302px; top: 23px; position: absolute"></asp:TextBox>
