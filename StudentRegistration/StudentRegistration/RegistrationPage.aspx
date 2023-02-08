@@ -14,6 +14,7 @@
 <body>
     <form id="registrationForm" runat="server">
         <div style="height: 71px">
+            <asp:CustomValidator ID="chckvalidator" runat="server" ErrorMessage="Course registration is required" OnServerValidate="chckvalidator_ServerValidate" ForeColor="Red" style="z-index: 1; left: 54px; top: 676px; position: absolute"></asp:CustomValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Address cannot be blank" ControlToValidate="addresstxt" ForeColor="Red" style="z-index: 1; left: 492px; top: 166px; position: absolute"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Phone number cannot be blank" ControlToValidate="phoneNumbertxt" ForeColor="Red" style="z-index: 1; left: 492px; top: 202px; position: absolute"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Email cannot be blank" ControlToValidate="emailtxt" ForeColor="#FF3300" style="z-index: 1; left: 493px; top: 124px; position: absolute; height: 15px"></asp:RequiredFieldValidator>
@@ -64,7 +65,7 @@
                 </Columns>
             </asp:GridView>
             </div>
-            <asp:GridView ID="gvOutput" runat="server" EnableTheming="False" style="z-index: 1; left: 43px; top: 365px; position: absolute; height: 212px; width: 403px" Visible="False">
+            <asp:GridView ID="gvOutput" runat="server" EnableTheming="False" style="z-index: 1; left: 52px; top: 365px; position: absolute; height: 212px; width: 403px" Visible="False">
             </asp:GridView>
         </p>
     </form>

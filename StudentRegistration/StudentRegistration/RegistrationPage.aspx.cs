@@ -8,6 +8,7 @@ using CollegeServiceLibrary;
 using System.Data;
 using Utilities;
 using System.ComponentModel.DataAnnotations;
+using System.Data.SqlClient;
 
 
 namespace StudentRegistration
@@ -40,8 +41,11 @@ namespace StudentRegistration
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            if (IsPostBack)
+            
+            if (IsPostBack && chckvalidator.IsValid)
             {
+                DBConnect objDB = new DBConnect();
+                SqlCommand updateSQL;
                 
                 List<Course> roster = new List<Course>();
                 gvInput.Visible = false;
@@ -94,15 +98,46 @@ namespace StudentRegistration
 
                         studentCourse = new Course(delivery, crn, dep, title,description, days, time, semester, professor, credit, fees, newSeat.ToString(), cost);
                         roster = studentRoster.addCourse(studentCourse);
-
+                        updateSQL = new SqlCommand("UPDATE Courses SET TotalAvailableSeats =" + newSeat.ToString() + "WHERE CRN =" + crn);
+                        objDB.DoUpdate(updateSQL);
+                        
+                        
+                        
 
                     }
                 }
-                
+                //string newSql = "UPDATE Courses SET TotalAvailableSeats='" +
+
+
                 gvOutput.Visible = true;
                 btnSubmit.Visible = false;
                 gvOutput.DataSource = roster;
                 gvOutput.DataBind();
+            }
+        }
+
+        protected void chckvalidator_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            //CheckBox chk = (CheckBox)gvInput.FindControl("sectionchck");
+            int count = 0;
+            foreach (GridViewRow row in gvInput.Rows)
+            {
+                if (((CheckBox)row.FindControl("sectionchck")).Checked)
+                {
+                    count++;
+                    
+                }
+                
+            }
+            if(count > 0)
+            {
+                args.IsValid = true;
+                
+            }
+            else
+            {
+                args.IsValid = false;
+                
             }
         }
     }
