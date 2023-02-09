@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using CollegeServiceLibrary;
 using System.Data;
 using Utilities;
-using System.ComponentModel.DataAnnotations;
+//using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 
 
@@ -106,7 +106,7 @@ namespace StudentRegistration
 
                     }
                 }
-                //string newSql = "UPDATE Courses SET TotalAvailableSeats='" +
+                
 
 
                 gvOutput.Visible = true;
@@ -118,7 +118,7 @@ namespace StudentRegistration
 
         protected void chckvalidator_ServerValidate(object source, ServerValidateEventArgs args)
         {
-            //CheckBox chk = (CheckBox)gvInput.FindControl("sectionchck");
+            
             int count = 0;
             foreach (GridViewRow row in gvInput.Rows)
             {
