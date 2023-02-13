@@ -7,7 +7,7 @@
     <title>Temple Student Registration Form</title>
     <style type="text/css">
         #registrationForm {
-            height: 827px;
+            height: 1011px;
         }
     </style>
     <link rel="stylesheet" href="Registration.css" />
@@ -18,7 +18,7 @@
     </div>
     <form id="registrationForm" runat="server">
         <div style="height: 71px">
-            <asp:CustomValidator ID="chckvalidator" runat="server" ErrorMessage="Course registration is required" OnServerValidate="chckvalidator_ServerValidate" ForeColor="Red" style="z-index: 1; left: 48px; top: 489px; position: absolute"></asp:CustomValidator>
+            <asp:CustomValidator ID="chckvalidator" runat="server" ErrorMessage="Course registration is required" OnServerValidate="chckvalidator_ServerValidate" ForeColor="Red" style="z-index: 1; left: 295px; top: 436px; position: absolute; height: 19px;"></asp:CustomValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Address cannot be blank" ControlToValidate="addresstxt" ForeColor="Red" style="z-index: 1; left: 613px; top: 292px; position: absolute"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Phone number cannot be blank" ControlToValidate="phoneNumbertxt" ForeColor="Red" style="z-index: 1; left: 615px; top: 152px; position: absolute"></asp:RequiredFieldValidator>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Email cannot be blank" ControlToValidate="emailtxt" ForeColor="#FF3300" style="z-index: 1; left: 611px; top: 255px; position: absolute; height: 15px"></asp:RequiredFieldValidator>
@@ -39,18 +39,18 @@
             <asp:Label ID="phonelbl" runat="server" style="z-index: 1; left: 60px; top: 154px; position: absolute" Text="Please enter your phone: "></asp:Label>
             <asp:TextBox ID="phoneNumbertxt" runat="server" OnTextChanged="TextBox1_TextChanged" style="z-index: 1; left: 372px; top: 292px; position: absolute"></asp:TextBox>
             <asp:DropDownList ID="statusddl" runat="server" style="z-index: 1; left: 371px; top: 338px; position: absolute; height: 25px">
-                <asp:ListItem>full-time</asp:ListItem>
+                <asp:ListItem>Full-time</asp:ListItem>
                 <asp:ListItem>part-time</asp:ListItem>
             </asp:DropDownList>
             <asp:Label ID="statuslbl" runat="server" style="z-index: 1; left: 62px; top: 337px; position: absolute; right: 1220px" Text="Status:"></asp:Label>
             <asp:Label ID="paymentlbl" runat="server" style="z-index: 1; left: 58px; top: 379px; position: absolute" Text="Please choose your payment option:"></asp:Label>
             <asp:DropDownList ID="paymentddl" runat="server" style="z-index: 1; left: 370px; top: 381px; position: absolute">
-                <asp:ListItem>pay now</asp:ListItem>
-                <asp:ListItem>payment plan</asp:ListItem>
-                <asp:ListItem>financial aid</asp:ListItem>
+                <asp:ListItem>Pay Now</asp:ListItem>
+                <asp:ListItem>Payment Plan</asp:ListItem>
+                <asp:ListItem>Financial Aid</asp:ListItem>
             </asp:DropDownList>
            
-            <asp:GridView ID="gvInput" runat="server" CssClass="gvInput" RowStyle-CssClass="row">
+            <asp:GridView ID="gvInput" runat="server" CssClass="gvInput" RowStyle-CssClass="row" CellSpacing="5">
                 <Columns>
                     <asp:TemplateField HeaderText="Section">
                         <ItemTemplate>

@@ -67,7 +67,6 @@ namespace StudentRegistration
                 StudentRoster studentRoster = new StudentRoster();
                 CheckBox chk;
                 DropDownList ddl;
-                double cost;
                 int newSeat;
 
                 testlbl.Text = student.ToString();
@@ -93,7 +92,7 @@ namespace StudentRegistration
                         string fees = gvInput.Rows[i].Cells[11].Text;
                         string seats = gvInput.Rows[i].Cells[12].Text;
                         newSeat = int.Parse(seats) - 1; // Seat available decrease by 1 after registering
-                        cost = Course.costCalc(double.Parse(credit), double.Parse(fees));
+                        Double cost = Course.costCalc(double.Parse(credit), double.Parse(fees));
 
                         studentCourse = new Course(delivery, crn, dep, title,description, days, time, semester, professor, credit, fees, newSeat.ToString(), cost);
                         roster = studentRoster.addCourse(studentCourse);
@@ -112,10 +111,11 @@ namespace StudentRegistration
                 btnSubmit.Visible = false;
                 gvOutput.DataSource = roster;
                 gvOutput.DataBind();
+               
             }
         }
 
-        protected void chckvalidator_ServerValidate(object source, ServerValidateEventArgs args)
+        protected void chckvalidator_ServerValidate(object source, ServerValidateEventArgs args) //Method to check if there is at least 1 checked checkbox
         {
             
             int count = 0;
@@ -139,5 +139,7 @@ namespace StudentRegistration
                 
             }
         }
+
+     
     }
 }

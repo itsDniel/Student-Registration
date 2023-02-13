@@ -11,9 +11,8 @@ namespace CollegeServiceLibrary
         List<Course> b = new List<Course>();
         public List<Course> addCourse(Course a)
         {
-            //List<Course> b = new List<Course>;
             b.Add(a);
-            return b;
+            return b; //Return a list of objects
         }
     }
 }

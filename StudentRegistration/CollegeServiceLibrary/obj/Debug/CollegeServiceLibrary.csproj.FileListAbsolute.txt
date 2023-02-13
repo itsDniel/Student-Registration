@@ -4,3 +4,9 @@ C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Colleg
 C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\bin\Debug\CollegeServiceLibrary.pdb
 C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Debug\CollegeServiceLibrary.dll
 C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Debug\CollegeServiceLibrary.pdb
+C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\bin\Debug\CollegeServiceLibrary.dll
+C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\bin\Debug\CollegeServiceLibrary.pdb
+C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Debug\CollegeServiceLibrary.csproj.AssemblyReference.cache
+C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Debug\CollegeServiceLibrary.csproj.CoreCompileInputs.cache
+C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Debug\CollegeServiceLibrary.dll
+C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Debug\CollegeServiceLibrary.pdb
