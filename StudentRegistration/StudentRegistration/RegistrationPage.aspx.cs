@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using CollegeServiceLibrary;
 using System.Data;
 using Utilities;
-//using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 
 
