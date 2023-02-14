@@ -1,0 +1,5 @@
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\bin\Release\Utilities.dll
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\bin\Release\Utilities.pdb
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\obj\Release\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\obj\Release\Utilities.dll
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\obj\Release\Utilities.pdb

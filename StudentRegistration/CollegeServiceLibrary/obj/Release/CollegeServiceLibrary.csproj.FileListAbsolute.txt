@@ -1,0 +1,6 @@
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\bin\Release\CollegeServiceLibrary.dll
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\bin\Release\CollegeServiceLibrary.pdb
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Release\CollegeServiceLibrary.csproj.AssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Release\CollegeServiceLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Release\CollegeServiceLibrary.dll
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\CollegeServiceLibrary\obj\Release\CollegeServiceLibrary.pdb

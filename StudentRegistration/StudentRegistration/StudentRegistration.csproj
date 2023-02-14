@@ -96,6 +96,10 @@
       <Project>{98497add-1fa2-4c40-beed-1910d54a7455}</Project>
       <Name>CollegeServiceLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{33e17caa-8a86-4e5d-a107-1b32ff0298f3}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

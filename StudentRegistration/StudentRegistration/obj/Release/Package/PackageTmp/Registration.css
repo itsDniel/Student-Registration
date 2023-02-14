@@ -1,0 +1,23 @@
+﻿.nav{
+    background-color: red;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+p1{
+    text-align:center;
+    color: white;
+    font-size: 30px;
+}
+
+.gvInput{
+    width: 10%;
+    border: solid 2px black;
+    top: 30rem;
+    position: absolute;
+    left: 3rem;
+
+   
+}
+

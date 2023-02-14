@@ -1,0 +1,6 @@
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\bin\Debug\Utilities.dll
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\bin\Debug\Utilities.pdb
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\obj\Debug\Utilities.csproj.AssemblyReference.cache
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\obj\Debug\Utilities.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\obj\Debug\Utilities.dll
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\Utilities\obj\Debug\Utilities.pdb

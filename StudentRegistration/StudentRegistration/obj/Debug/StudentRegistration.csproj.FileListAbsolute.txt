@@ -120,3 +120,5 @@ C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\Student
 C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.csproj.CopyComplete
 C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.dll
 C:\Users\qahdu\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\obj\Debug\StudentRegistration.pdb
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\bin\Utilities.dll
+C:\Users\Daniel\Documents\GitHub\Student-Registration\StudentRegistration\StudentRegistration\bin\Utilities.pdb
