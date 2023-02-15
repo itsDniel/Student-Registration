@@ -25,6 +25,7 @@ namespace StudentRegistration
                 gvInput.DataSource = objDB.GetDataSet(sql);
                 gvInput.DataBind();
                 
+                
             }
         }
 
@@ -45,7 +46,7 @@ namespace StudentRegistration
             {
                 DBConnect objDB = new DBConnect();
                 SqlCommand updateSQL;
-                
+                double total = 0;
                 List<Course> roster = new List<Course>();
                 gvInput.Visible = false;
                 Student student = new Student(nametxt.Text, idtxt.Text, emailtxt.Text, addresstxt.Text, statusddl.Text, paymentddl.Text);
@@ -80,21 +81,20 @@ namespace StudentRegistration
                     if (chk.Checked)
                     {
                         string delivery = ddl.SelectedValue;
-                        string crn = gvInput.Rows[i].Cells[2].Text;
-                        string dep = gvInput.Rows[i].Cells[3].Text;
-                        string title = gvInput.Rows[i].Cells[4].Text;
-                        string description = gvInput.Rows[i].Cells[5].Text;
-                        string days = gvInput.Rows[i].Cells[6].Text;
-                        string time = gvInput.Rows[i].Cells[7].Text;
-                        string semester = gvInput.Rows[i].Cells[8].Text;
-                        string professor = gvInput.Rows[i].Cells[9].Text;
-                        string credit = gvInput.Rows[i].Cells[10].Text;
-                        string fees = gvInput.Rows[i].Cells[11].Text;
-                        string seats = gvInput.Rows[i].Cells[12].Text;
+                        string crn = gvInput.Rows[i].Cells[1].Text;
+                        string dep = gvInput.Rows[i].Cells[2].Text;
+                        string title = gvInput.Rows[i].Cells[3].Text;
+                        string description = gvInput.Rows[i].Cells[4].Text;
+                        string days = gvInput.Rows[i].Cells[5].Text;
+                        string time = gvInput.Rows[i].Cells[6].Text;
+                        string professor = gvInput.Rows[i].Cells[7].Text;
+                        string credit = gvInput.Rows[i].Cells[8].Text;
+                        string fees = gvInput.Rows[i].Cells[10].Text;
+                        string seats = gvInput.Rows[i].Cells[11].Text;
                         newSeat = int.Parse(seats) - 1; // Seat available decrease by 1 after registering
-                        Double cost = Course.costCalc(double.Parse(credit), double.Parse(fees));
-
-                        studentCourse = new Course(delivery, crn, dep, title,description, days, time, semester, professor, credit, fees, newSeat.ToString(), cost);
+                        double cost = Course.costCalc(double.Parse(credit), double.Parse(fees));
+                        total += cost;
+                        studentCourse = new Course(delivery, crn, dep, title,description, days, time, professor, credit, fees, newSeat.ToString(), cost);
                         roster = studentRoster.addCourse(studentCourse);
                         updateSQL = new SqlCommand("UPDATE Courses SET TotalAvailableSeats =" + newSeat.ToString() + "WHERE CRN =" + crn);
                         objDB.DoUpdate(updateSQL);
@@ -111,7 +111,7 @@ namespace StudentRegistration
                 btnSubmit.Visible = false;
                 gvOutput.DataSource = roster;
                 gvOutput.DataBind();
-               
+                Label1.Text = "The total cost for this semester is: $" + total;
             }
         }
 

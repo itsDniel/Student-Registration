@@ -50,13 +50,22 @@
                 <asp:ListItem>Financial Aid</asp:ListItem>
             </asp:DropDownList>
            
-            <asp:GridView ID="gvInput" runat="server" CssClass="gvInput" RowStyle-CssClass="row" CellSpacing="5">
+            <asp:GridView ID="gvInput" runat="server" CssClass="gvInput" RowStyle-CssClass="row" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:TemplateField HeaderText="Section">
                         <ItemTemplate>
                             <asp:CheckBox ID="sectionchck" runat="server" />
                         </ItemTemplate>
                     </asp:TemplateField>
+                    <asp:BoundField DataField="CRN" HeaderText="CRN" />
+                    <asp:BoundField DataField="DepartmentCode" HeaderText="Deparment Code" />
+                    <asp:BoundField DataField="CourseTitle" HeaderText="Course Title" />
+                    <asp:BoundField DataField="Description" HeaderText="Description" />
+                    <asp:BoundField DataField="Days" HeaderText="Days" />
+                    <asp:BoundField DataField="Time" HeaderText="Time" />
+                    <asp:BoundField DataField="Professor" HeaderText="Professor" />
+                    <asp:BoundField DataField="CreditHours" HeaderText="Credit Hours" />
                     <asp:TemplateField HeaderText="Course Delivery">
                         <ItemTemplate>
                             <asp:DropDownList ID="deliveryddl" runat="server">
@@ -66,14 +75,55 @@
                             </asp:DropDownList>
                         </ItemTemplate>
                     </asp:TemplateField>
+                    <asp:BoundField DataField="AdditionalFees" HeaderText="Fees" SortExpression="Fees" />
+                    <asp:BoundField DataField="TotalAvailableSeats" HeaderText="Seats" />
                 </Columns>
+
+                <EditRowStyle BackColor="#2461BF" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+
+<RowStyle CssClass="row" BackColor="#EFF3FB"></RowStyle>
+                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
             </div>
-            <asp:GridView ID="gvOutput" runat="server" EnableTheming="False" style="z-index: 1; left: 46px; top: 552px; position: absolute; height: 212px; width: 403px" Visible="False">
+            <asp:GridView ID="gvOutput" runat="server" EnableTheming="False" style="z-index: 1; left: 52px; top: 555px; position: absolute; height: 276px; width: 1444px" Visible="False" AutoGenerateColumns="False" BorderColor="Black" BorderStyle="Solid" BorderWidth="2px" CellPadding="4" ForeColor="#333333" GridLines="None">
+                <AlternatingRowStyle BackColor="White" />
+                <Columns>
+                    <asp:BoundField DataField="crn" HeaderText="CRN" SortExpression="CRN" />
+                    <asp:BoundField DataField="DepartmentCode" HeaderText="Department Code" SortExpression="DepartmentCode" />
+                    <asp:BoundField DataField="title" HeaderText="Course Title" SortExpression="CourseTitle" />
+                    <asp:BoundField DataField="description" HeaderText="Description" SortExpression="Description" />
+                    <asp:BoundField DataField="days" HeaderText="Days" SortExpression="Days" />
+                    <asp:BoundField DataField="time" HeaderText="Time" SortExpression="Time" />
+                    <asp:BoundField DataField="professor" HeaderText="Professor" SortExpression="Professor" />
+                    <asp:BoundField DataField="credit" HeaderText="Credit Hours" SortExpression="CreditHours" />
+                    <asp:BoundField DataField="delivery" HeaderText="Course Delivery" SortExpression="CourseDelivery" />
+                    <asp:BoundField DataField="fees" HeaderText="Fees" SortExpression="AditionalFees" />
+                    <asp:BoundField DataField="Seat" HeaderText="Total Seats" SortExpression="TotalAvailableSeats" />
+                    <asp:BoundField DataField="cost" HeaderText="Cost" SortExpression="cost" />
+                </Columns>
+                <EditRowStyle BackColor="#2461BF" />
+                <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+                <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+                <RowStyle BackColor="#EFF3FB" />
+                <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+                <SortedAscendingCellStyle BackColor="#F5F7FB" />
+                <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+                <SortedDescendingCellStyle BackColor="#E9EBEF" />
+                <SortedDescendingHeaderStyle BackColor="#4870BE" />
             </asp:GridView>
         <br />
         <br />
         <br />
+        
+        <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 57px; top: 858px; position: absolute"></asp:Label>
         
     </form>
     <p>

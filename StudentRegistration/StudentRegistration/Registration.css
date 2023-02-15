@@ -12,12 +12,12 @@ p1{
 }
 
 .gvInput{
-    width: 10%;
+    width: 80%;
     border: solid 2px black;
-    top: 30rem;
+    top: 555px;
     position: absolute;
-    left: 3rem;
-
-   
+    left: 51px;
+    height: 277px;
+    z-index: 1;
 }
 

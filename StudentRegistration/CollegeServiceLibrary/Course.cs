@@ -15,12 +15,11 @@ namespace CollegeServiceLibrary
         public string Description { get; set; }
         public string Days { get; set; }
         public string Time { get; set; }
-        public string Semester { get; set; }
         public string Professor { get; set; }
         public string Credit { get; set; }
         public string Fees { get; set; }
         public string Seat { get; set; }
-        public Double Cost { get; set; }
+        public double Cost { get; set; }
 
         public static double costCalc (Double a, Double b)
         {
@@ -28,7 +27,7 @@ namespace CollegeServiceLibrary
             return total;
         }
         
-        public Course(string delivery, string crn, string depCode, string title, string description, string days, string time, string semester, string professor, string credit, string fees, string seat, double cost)
+        public Course(string delivery, string crn, string depCode, string title, string description, string days, string time, string professor, string credit, string fees, string seat, double cost)
         {
             this.CRN = crn;
             this.DepartmentCode = depCode;
@@ -36,7 +35,6 @@ namespace CollegeServiceLibrary
             this.Description = description;
             this.Days = days;
             this.Time = time;
-            this.Semester = semester;
             this.Professor = professor;
             this.Credit = credit;
             this.Delivery = delivery;
